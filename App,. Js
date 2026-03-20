@@ -1,8 +1,8 @@
 (function() {
     // --- 1. THE SELF-DESTRUCT (Domain Lock) ---
     // Replace 'yourname.github.io' with your actual URL later
-    const _0x_allowed = "yourname.github.io"; 
-    if (window.location.hostname !== _0x_allowed && window.location.hostname !== "localhost") {
+    const _0x_allowed = "RoyalMagicDev.Github.io"; 
+    if (window.location.hostname !== _0x_allowed && window.location.hostname !== "RoyalMagicDev.Github.io") {
         document.body.innerHTML = "<h1>Unauthorized Mirror Detected.</h1>";
         return; 
     }
