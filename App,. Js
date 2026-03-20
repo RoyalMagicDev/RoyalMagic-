@@ -1,0 +1,28 @@
+(function() {
+    // --- 1. THE SELF-DESTRUCT (Domain Lock) ---
+    // Replace 'yourname.github.io' with your actual URL later
+    const _0x_allowed = "yourname.github.io"; 
+    if (window.location.hostname !== _0x_allowed && window.location.hostname !== "localhost") {
+        document.body.innerHTML = "<h1>Unauthorized Mirror Detected.</h1>";
+        return; 
+    }
+
+    // --- 2. SCRAMBLED STYLE INJECTION ---
+    const _0x_css = `
+        body { background: #0A1A4A; color: gold; font-family: Arial; text-align: center; padding-top: 80px; }
+        .title { font-size: 42px; font-weight: bold; margin-bottom: 40px; }
+        .btn { background: gold; color: #0A1A4A; padding: 18px 32px; border: none; border-radius: 8px; font-size: 20px; font-weight: bold; cursor: pointer; }
+    `;
+    const styleSheet = document.createElement("style");
+    styleSheet.innerText = _0x_css;
+    document.head.appendChild(styleSheet);
+
+    // --- 3. THE APP CONTENT ---
+    const _0x_ui = `
+        <h1 class="title">RoyalMagic</h1>
+        <button class="btn" id="enterBtn">Enter</button>
+    `;
+    document.getElementById("root").innerHTML = _0x_ui;
+
+    document.getElementById("enterBtn").addEventListener("click", () => {
+        alert("RoyalMagi
